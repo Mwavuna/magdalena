@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stress Management Group — Magdalena Karanja</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  :root {
+    --primary: #10b981;
+    --secondary: #6b7280;
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-blur: 12px;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0fdfa 0%, #d1fae5 100%);
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .glass {
+    backdrop-filter: blur(var(--glass-blur));
+    background: var(--glass-bg);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 2rem;
+  }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 3rem; }
+  nav a { margin-left: 1rem; text-decoration: none; color: var(--secondary); font-weight: 600; transition: 0.3s; }
+  nav a:hover { color: var(--primary); }
+  header { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; padding: 3rem; gap: 2rem; }
+  header h1 { font-size: 3rem; color: var(--primary); text-align: center; }
+  header p { color: var(--secondary); font-size: 1.25rem; text-align: center; }
+  .btn-primary { background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 999px; font-weight: 600; transition: transform 0.3s; }
+  .btn-primary:hover { transform: scale(1.05); }
+  main { display: grid; gap: 3rem; padding: 2rem 3rem; }
+  .section-title { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; text-align: center; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+  .card-glass { padding: 1.5rem; background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur)); border-radius: 1.5rem; transition: transform 0.4s; }
+  .card-glass:hover { transform: translateY(-10px) rotate(-1deg); }
+  .floating-btn { position: fixed; bottom: 2rem; right: 2rem; background: var(--primary); color: white; padding: 1rem 1.5rem; border-radius: 999px; font-weight: 600; box-shadow: 0 10px 20px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.3s; }
+  .floating-btn:hover { transform: scale(1.1); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SM Group</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#sessions">Sessions</a>
+    <a href="#activities">Exercises</a>
+    <a href="#contact" class="btn-primary">Join</a>
+  </div>
+</nav>
+
+<header>
+  <div class="glass animate__animated animate__fadeInUp">
+    <h1>Stress Management Group</h1>
+    <p>Learn fun ways to manage stress, stay calm, and practice mindfulness. Interactive sessions with creative exercises included.</p>
+    <div style="display:flex; justify-content:center; gap:1rem; margin-top:1.5rem;">
+      <a href="#contact" class="btn-primary">Join Now</a>
+      <a href="#sessions" class="btn-primary" style="background:white; color:var(--primary); border:2px solid var(--primary);">See Plan</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about" class="glass card-glass animate__animated animate__fadeInLeft">
+  <h2 class="section-title">About the Group</h2>
+  <p>This group supports individuals to understand and manage stress through mindfulness, journaling, interactive games, and discussion. We focus on building personal coping skills in a fun and safe space.</p>
+</section>
+
+<section id="sessions" class="glass card-glass animate__animated animate__fadeInRight">
+  <h2 class="section-title">Session Plan</h2>
+  <div class="cards">
+    <div class="card-glass">
+      <h3>Session 1 — Mindfulness & Breathing</h3>
+      <p>Warm-up games, breathing exercises, guided visualization to identify personal stress triggers.</p>
+    </div>
+    <div class="card-glass">
+      <h3>Session 2 — Journaling & Reflection</h3>
+      <p>Write about stress situations, discuss in pairs, share coping strategies in a safe circle.</p>
+    </div>
+    <div class="card-glass">
+      <h3>Session 3 — Problem Solving & Scenarios</h3>
+      <p>Role-play stressful scenarios, brainstorm coping options, team exercises for calm responses.</p>
+    </div>
+    <div class="card-glass">
+      <h3>Session 4 — Creative Movement</h3>
+      <p>Guided stretching, mindful walking, yoga-inspired exercises to relax and refocus.</p>
+    </div>
+    <div class="card-glass">
+      <h3>Session 5 — Stress Games</h3>
+      <p>Team games designed to reduce tension, build teamwork, and practice coping under fun pressure.</p>
+    </div>
+    <div class="card-glass">
+      <h3>Session 6 — Reflection & Goals</h3>
+      <p>Review techniques, share progress, set personal stress management goals for daily life.</p>
+    </div>
+  </div>
+</section>
+
+<section id="activities" class="glass card-glass animate__animated animate__fadeInUp">
+  <h2 class="section-title">Activities & Exercises</h2>
+  <ul style="list-style-type:square; padding-left:1.5rem;">
+    <li>Mindful breathing and relaxation exercises</li>
+    <li>Journaling stress experiences and triggers</li>
+    <li>Role-playing everyday stress scenarios</li>
+    <li>Team-based stress reduction games</li>
+    <li>Yoga and gentle movement exercises</li>
+    <li>Reflection circles and goal-setting tasks</li>
+  </ul>
+</section>
+
+<section id="contact" class="glass card-glass animate__animated animate__fadeInDown">
+  <h2 class="section-title">Contact & Join</h2>
+  <p>Facilitator: Magdalena Karanja</p>
+  <p>Email: example@example.com | Phone: +1 (123) 456-7890</p>
+  <p>Join the next session to learn interactive stress coping skills in a fun, safe environment.</p>
+  <button class="btn-primary" onclick="alert('Thank you for joining!')">Join Session</button>
+</section>
+
+<div class="floating-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Top</div>
+
+</main>
+</body>
+</html>
